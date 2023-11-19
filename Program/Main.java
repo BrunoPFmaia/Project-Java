@@ -57,18 +57,15 @@ public class Main {
                             isMenuActive = false;
                             break;
                         case 1:
-
-                            break;
-                        case 2:
                             // Lógica para depositar
                             break;
-                        case 3:
+                        case 2:
                             // Lógica para sacar
                             break;
-                        case 4:
+                        case 3:
                             // Lógica para consultar saldo
                             break;
-                        case 5:
+                        case 4:
                             // Lógica para consultar dados de usuário
                             break;
                         default:
@@ -111,18 +108,15 @@ public class Main {
                             isMenuActive = false;
                             break;
                         case 1:
-
+                            // Lógica para depositar
                             break;
                         case 2:
-                            // Lógica para depositar -
-                            break;
-                        case 3:
                             // Lógica para sacar
                             break;
-                        case 4:
+                        case 3:
                             // Lógica para consultar saldo
                             break;
-                        case 5:
+                        case 4:
                             // Lógica para consultar dados de usuário
                             break;
                         default:
