@@ -30,7 +30,7 @@ public class Main {
 
                 System.out.println("Qual sua idade?");
                 int age = sc.nextInt();
-                // validar maioridade
+                // validar maioridade - Nayara
 
                 System.out.print("Saldo inicial: ");
                 double balance = sc.nextDouble();
@@ -60,10 +60,10 @@ public class Main {
                             // Lógica para depositar
                             break;
                         case 2:
-                            // Lógica para sacar
+                            // Lógica para sacar -
                             break;
                         case 3:
-                            // Lógica para consultar saldo
+                            // Lógica para consultar saldo - Nayara
                             break;
                         case 4:
                             // Lógica para consultar dados de usuário
@@ -114,7 +114,7 @@ public class Main {
                             // Lógica para sacar
                             break;
                         case 3:
-                            // Lógica para consultar saldo
+                            // Lógica para consultar saldo - Nayara
                             break;
                         case 4:
                             // Lógica para consultar dados de usuário
