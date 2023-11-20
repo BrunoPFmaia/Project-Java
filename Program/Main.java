@@ -66,7 +66,7 @@ public class Main {
                             // Lógica para consultar saldo - Nayara
                             break;
                         case 4:
-                            // Lógica para consultar dados de usuário
+                            // Lógica para consultar dados de usuário - Junior
                             break;
                         default:
                             System.out.println("Opção inválida. Tente novamente.");
@@ -117,7 +117,7 @@ public class Main {
                             // Lógica para consultar saldo - Nayara
                             break;
                         case 4:
-                            // Lógica para consultar dados de usuário
+                            // Lógica para consultar dados de usuário - Junior
                             break;
                         default:
                             System.out.println("Opção inválida. Tente novamente.");
