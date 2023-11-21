@@ -1,12 +1,22 @@
 package Program;
 
+import Entities.LegalPerson;
+import Entities.Person;
+import Entities.PhysicalPerson;
+import com.sun.management.UnixOperatingSystemMXBean;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Scanner sc2 = new Scanner(System.in);
+        Person p = new Person();
+        LegalPerson l = new LegalPerson();
+        PhysicalPerson i = new PhysicalPerson();
+
         boolean isMenuActive = true;
+
 
         System.out.println("-------------------------------------------------");
         System.out.println("             Bem vindo ao Banco Azul             ");
@@ -20,6 +30,7 @@ public class Main {
 
         int personOfType = sc.nextInt();
 
+
         switch (personOfType) {
             case 1:
                 System.out.println("Digite seu CPF (apenas números):");
@@ -30,6 +41,11 @@ public class Main {
 
                 System.out.println("Qual sua idade?");
                 int age = sc.nextInt();
+
+                if (age < 18){
+                    System.out.println("Idade não permitida");
+                    break;
+                }
                 // validar maioridade - Nayara
 
                 System.out.print("Saldo inicial: ");
@@ -63,9 +79,13 @@ public class Main {
                             // Lógica para sacar -
                             break;
                         case 3:
+                            System.out.println(" O atual saldo da conta é:" + p.getCalcular_saldo());
                             // Lógica para consultar saldo - Nayara
                             break;
                         case 4:
+                            System.out.println("Nome:" + p.getName());
+                            System.out.println("CPF:" + i.getCpf());
+                            System.out.println("Idade:" + i.getIdade());
                             // Lógica para consultar dados de usuário - Junior
                             break;
                         default:
@@ -114,9 +134,13 @@ public class Main {
                             // Lógica para sacar
                             break;
                         case 3:
+                            System.out.println(" O atual saldo da conta é:" + p.getCalcular_saldo());
                             // Lógica para consultar saldo - Nayara
                             break;
                         case 4:
+                            System.out.println("CNPJ:" + l.getCnpj());
+                            System.out.println("Razão Social:" + l.getCorporateReason());
+                            System.out.println("Nome do responsável legal:" + p.getName());
                             // Lógica para consultar dados de usuário - Junior
                             break;
                         default:
