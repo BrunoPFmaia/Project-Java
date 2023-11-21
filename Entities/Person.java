@@ -5,13 +5,13 @@ public class Person {
     protected String name;
     protected Date birth;
     protected Double income;
-    private Double balance, saldo, depositar, sacar, calcular_saldo;
+    private Double balance, saldo, deposito, sacar;
 
     public Person() {
         String name;
         Date birth;
         Double income;
-        Double balance, saldo, depositar, sacar, calcular_saldo;
+        Double balance, saldo, deposito, sacar;
     }
 
     @Override
@@ -59,12 +59,16 @@ public class Person {
         this.saldo = saldo;
     }
 
-    public Double getDepositar() {
-        return depositar;
+    public Double getDeposito() {
+        return deposito;
     }
 
-    public void setDepositar(Double depositar) {
-        this.depositar = depositar;
+    public void setDeposito(Double deposito) {
+        this.deposito = deposito;
+    }
+
+    public void depositar(){
+        this.balance = this.balance + this.deposito;
     }
 
     public Double getSacar() {
@@ -73,17 +77,6 @@ public class Person {
 
     public void setSacar(Double sacar) {
         this.sacar = sacar;
-    }
-
-    public Double getCalcular_saldo() {
-        return calcular_saldo;
-    }
-
-    public void setCalcular_saldo(Double calcular_saldo) {
-        this.calcular_saldo = calcular_saldo;
-    }
-    public void calcular_saldo(){
-        calcular_saldo = (balance + depositar) - sacar;
     }
 }
 

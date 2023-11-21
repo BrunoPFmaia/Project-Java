@@ -50,6 +50,7 @@ public class Main {
 
                 System.out.print("Saldo inicial: ");
                 double balance = sc.nextDouble();
+                p.setBalance(balance);
 
                 System.out.print("Limite de saque: ");
                 double withdrawLimit = sc.nextDouble();
@@ -73,13 +74,16 @@ public class Main {
                             isMenuActive = false;
                             break;
                         case 1:
-                            // Lógica para depositar
+                            System.out.print("Informe o valor que deseja depositar: ");
+                            double deposito = sc.nextDouble();
+                            p.setDeposito(deposito);
+                            p.depositar();
                             break;
                         case 2:
                             // Lógica para sacar -
                             break;
                         case 3:
-                            System.out.println(" O atual saldo da conta é:" + p.getCalcular_saldo());
+                            System.out.printf(" O atual saldo da conta é: %.2f %n", p.getBalance());
                             // Lógica para consultar saldo - Nayara
                             break;
                         case 4:
@@ -108,6 +112,7 @@ public class Main {
 
                 System.out.print("Saldo inicial que você deseja inserir: ");
                 double balance2 = sc.nextDouble();
+                p.setBalance(balance2);
 
                 System.out.print("Limite de saque: ");
                 double withdrawLimit2 = sc.nextDouble();
@@ -128,13 +133,16 @@ public class Main {
                             isMenuActive = false;
                             break;
                         case 1:
-                            // Lógica para depositar
+                            System.out.print("Informe o valor que deseja depositar: ");
+                            double deposito = sc.nextDouble();
+                            p.setDeposito(deposito);
+                            p.depositar();
                             break;
                         case 2:
                             // Lógica para sacar
                             break;
                         case 3:
-                            System.out.println(" O atual saldo da conta é:" + p.getCalcular_saldo());
+                            System.out.printf(" O atual saldo da conta é: %.2f %n", p.getBalance());
                             // Lógica para consultar saldo - Nayara
                             break;
                         case 4:
